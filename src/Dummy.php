@@ -7,6 +7,7 @@ class Dummy
     public const TYPE_PERCENTAGE = 'percentage';
 
     private string $type;
+    private string $unused;
 
     public function __construct(string $type)
     {
@@ -16,5 +17,11 @@ class Dummy
     public function getType(): string
     {
         return $this->type;
+    }
+
+    public function setType(string $type): self
+    {
+        $this->type = $type;
+        return $this;
     }
 }
