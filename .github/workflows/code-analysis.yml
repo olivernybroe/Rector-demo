@@ -15,9 +15,6 @@ jobs:
           -   name: Rector
               run: 'vendor/bin/rector process src --dry-run'
 
-          -   name: Rector (git diff)
-              run: 'vendor/bin/rector process src --dry-run --match-git-diff'
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

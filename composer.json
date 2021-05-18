@@ -1,9 +1,9 @@
 {
     "name": "olivernybroe/dummy",
     "require-dev": {
-        "rector/rector": "^0.9.29"
+        "rector/rector": "^0.11",
+        "pestphp/pest": "^1.2"
     },
-    "require": {},
     "autoload": {
         "psr-4": {
             "Dummy\\": "src/"
